@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="media/fav.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Almarai', Arial, sans-serif;
+            text-align: center;
+            direction: rtl;
+            padding: 20px;
+        }
+        .gif-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>افتح الرابط في المتصفح</h1>
+    <div class="gif-container">
+        <img src="media/pre-load.gif" style="width:100%;">
+    </div>
+
+    <script>
+        user = navigator.userAgent;
+        url ="https://gzywin.github.io/fawazir-ghazzidiyabi"
+        function redirect(url) {
+            var istiktok = /bytedance/i.test(user);
+            
+            if (!istiktok) {
+                setTimeout(function () {
+                    window.location.href = url;
+        }, 25);
+            }
+
+            else {
+
+            }
+        }
+
+        redirect(url)
+       
+    </script>
+</body>
+</html>
